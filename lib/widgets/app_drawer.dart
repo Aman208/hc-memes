@@ -27,7 +27,7 @@ class AppDrawer extends StatelessWidget {
             title: Text('My Memes' , style: Theme.of(context).textTheme.title,),
             onTap: () {
               Navigator.of(context)
-                  .pushReplacementNamed('/ed');
+                  .pushReplacementNamed('/my-meme');
             },
           ),
         ],

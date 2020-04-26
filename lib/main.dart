@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hc_meme_generator/screens/editing-screen.dart';
+import 'package:hc_meme_generator/screens/template-select.dart';
+import 'package:hc_meme_generator/widgets/my_memes.dart';
 //import 'package:hc_meme_generator/screens/template-select.dart';
 
 
@@ -34,13 +36,13 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Raleway',
             )),
       ),
-      home: EditingScreen() ,
+      home: TemplateSelect() ,
       initialRoute: '/',
-      // routes: {
-      //   '/categories-meals': (ctx) => CategoryMealsScreen(),
-      //   '/meal-detail': (ctx) => MealDetailScreen(),
-      //   '/favourite': (ctx) => Favourite(),
-      // },
+      routes: {
+        '/edit': (ctx) => EditingScreen(),
+        '/my-meme': (ctx) => MyMemes(),
+        // '/photo-view': (ctx) => Text(),
+      },
     );
   }
 }

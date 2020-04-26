@@ -24,6 +24,7 @@ class TemplateSelectItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return  InkWell(
           onTap: () {
+            Navigator.of(context).pushNamed('/edit' , arguments: imageUrl  );
            
           },
           highlightColor: Colors.deepOrange,
