@@ -94,7 +94,7 @@ class TemplateSelect extends StatelessWidget {
                     child: GridView.builder(
                       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                         crossAxisSpacing: 15,
-                        childAspectRatio: 2.8 / 2,
+                        childAspectRatio: 2.6 / 2,
                         mainAxisSpacing: 10,
                         
                         maxCrossAxisExtent: 500,
